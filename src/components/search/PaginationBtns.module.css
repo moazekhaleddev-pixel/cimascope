@@ -1,0 +1,33 @@
+.btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.btns button ,.btns span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.btns span{
+    background-color: var(--accent);
+}
+
+.btns button{
+    background-color: var(--accent);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.btns button.muted{
+    background-color: var(--accent-dim);
+}

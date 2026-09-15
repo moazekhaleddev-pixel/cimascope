@@ -1,0 +1,45 @@
+.mainContent {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: auto;
+  height: 100%;
+}
+
+.mainContent h1{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.mainContent .info .rate {
+  color: var(--accent);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+@keyframes contentSlideUp {
+  0% {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+}
+
+.heroContentAnimate {
+  animation: contentSlideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.heroContentAnimate {
+  animation: contentSlideUp 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

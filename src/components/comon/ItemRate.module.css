@@ -1,0 +1,14 @@
+.rate {
+  background-color: var(--surface-glass);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: var(--radius-lg);
+  font-size: var(--font-sm);
+  padding: 1px 5px;
+  z-index: 1;
+}

@@ -1,0 +1,34 @@
+.counterBadge {
+  position: absolute !important;
+  top: 100px;
+  right: 20px;
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: var(--surface-glass);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+
+  padding: 6px 16px;
+  border-radius: 50px;
+
+  font-family: monospace;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.current {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.divider {
+  color: var(--text-secondary);
+}
+
+.total {
+  color: var(--text-muted);
+}

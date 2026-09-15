@@ -1,0 +1,21 @@
+.errorContainer {
+  width: 100%;
+  min-height: 200px; 
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.errorContainer p {
+  color: var(--text-primary);
+  font-size: var(--font-lg);
+  font-weight: 500;
+}

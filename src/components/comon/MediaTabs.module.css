@@ -1,0 +1,25 @@
+.tabContainer{
+    display: flex;
+    gap: 3px;
+    max-width: fit-content;
+    background-color: var(--surface-glass);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    margin-top: 30px;
+    padding: 2px;
+}
+
+.tabContainer .tab{
+    padding: 5px 25px;
+    color: var(--text-muted);
+    border: none;
+    background-color: transparent;
+    border-radius: var(--radius-xl);
+    cursor: pointer;
+}
+
+.tabContainer .tab.active{
+    background-color: var(--accent);
+    border-radius: var(--radius-xl);
+    color: black;
+}

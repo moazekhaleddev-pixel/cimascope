@@ -1,0 +1,13 @@
+.geners {
+  display: flex;
+  font-size: var(--font-sm);
+
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+ .geners span {
+  padding: 5px 10px;
+  background-color: var(--gener-bg);
+  border-radius: var(--radius-xl);
+}

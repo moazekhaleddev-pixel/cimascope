@@ -1,0 +1,17 @@
+.nav {
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav a {
+  font-size: var(--font-lg);
+  color: var(--text-secondary);
+  transition: all 0.3s;
+}
+.nav a:hover:not(:global(.active)) {
+  color: var(--text-primary);
+}
+.nav :global(.active) {
+  color: var(--accent);
+}

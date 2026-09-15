@@ -1,0 +1,16 @@
+.mediaHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mediaHeader h2 {
+  color: var(--text-primary);
+  font-size: 50px;
+
+}
+
+
+.mediaHeader span {
+  color: var(--text-secondary);
+}
