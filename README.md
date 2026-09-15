@@ -6,7 +6,7 @@ Frontend Framework: React (Vite)
 
 Routing: React Router Dom (Configured for SPA routing)
 
-State Management: React Context API & useReducer
+State Management: React Context API & useReducer & Redux toolkit
 
 Styling: Modular CSS / Modern Responsive UI
 
