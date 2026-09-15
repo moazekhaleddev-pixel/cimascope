@@ -95,14 +95,14 @@ const {
   removeWatchNotification,
   fetchRejected,
 } = watchSlice.actions;
-
+const BASE_URL = "https://cimascopejsonserver-ztwhj577.b4a.run"
 export { clearWatchNotifications, removeWatchNotification };
 
 export const getWatchList = () => {
   return async (dispatch) => {
     try {
       dispatch(fetchStart());
-      const data = await apiFetch("http://localhost:3001/watched");
+      const data = await apiFetch(`${BASE_URL}/watched`);
       dispatch(fetchWatchListSucces(data, "Watch List is ready"));
     } catch (error) {
       console.error(error.message);
@@ -113,10 +113,9 @@ export const getWatchList = () => {
 
 export const addItemToWatchList = (newItem) => {
   return async (dispatch) => {
-    
     try {
       dispatch(fetchStart());
-      const data = await apiFetch("http://localhost:3001/watched", {
+      const data = await apiFetch(`${BASE_URL}/watched`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -135,7 +134,7 @@ export const remveItemFromWatchList = (id) => {
   return async (dispatch) => {
     try {
       dispatch(fetchStart());
-      await apiFetch(`http://localhost:3001/watched/${id}`, {
+      await apiFetch(`${BASE_URL}/watched/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

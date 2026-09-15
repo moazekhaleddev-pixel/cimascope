@@ -1,18 +1,24 @@
-# React + Vite
+Cimascope 🎬
+A modern, responsive movie exploration web application built with React and Vite. The project delivers a smooth cinematic discovery experience, allowing users to browse movies, view detailed information, manage their personalized Favorites and Watchlist, and simulate user authentication.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠️ Technologies & Tools Used
+Frontend Framework: React (Vite)
 
-Currently, two official plugins are available:
+Routing: React Router Dom (Configured for SPA routing)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+State Management: React Context API & useReducer
 
-## React Compiler
+Styling: Modular CSS / Modern Responsive UI
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Data Fetching: Fetch API / Custom Fetch Wrapper
 
-Note: This will impact Vite dev & build performances.
+Mock Backend & Storage:
 
-## Expanding the ESLint configuration
+JSON-Server: Deployed to simulate real-time REST API operations for managing the user's Watchlist and Favorites collections.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Node.js / Express Server: Deployed as a lightweight authentication service handling session simulation, cookie parsing, and CORS.
+
+💡 Project Architecture & Development Notes
+Mock Authentication: To ensure an easy preview for recruiters and reviewers without requiring database registration, the project includes a simulated single-user login flow with pre-configured credentials.
+
+Demonstration Purpose: Designed primarily as a portfolio showcase to demonstrate core Front-End capabilities—including complex state flows, external API communication, routing resilience, and dynamic UI rendering. (Please note: As a fast-paced portfolio showcase, some minor typos or mock-state resets may occur due to temporary free-tier ephemeral server hosting).

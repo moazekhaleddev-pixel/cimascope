@@ -48,7 +48,7 @@ function reducers(state, action) {
 export default function AuthProvider({ children }) {
   const [state, dispatch] = useReducer(reducers, initialState);
   const { user, isAuthenticated, isLoading, errMsg } = state;
-  const BASE_URL = "http://localhost:5000/api";
+  const BASE_URL = "https://cimascopeauthserver-kk0rgys4.b4a.run/api";
   useEffect(() => {
     async function checkUserAuth() {
       dispatch({ type: "loading" });
