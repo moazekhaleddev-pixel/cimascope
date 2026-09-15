@@ -85,6 +85,8 @@
 .mainDetails .info p{   
     color: var(--text-secondary);
     max-width: 500px;
+    max-height: 100px;
+    overflow-x: hidden;
     font-size: var(--font-base);
 }
 
