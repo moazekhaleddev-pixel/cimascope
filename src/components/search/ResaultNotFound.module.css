@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.emoji {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary, #ffffff);
+  margin-bottom: 0.5rem;
+}
+
+.desc {
+  font-size: 1rem;
+  color: var(--text-secondary, #9ca3af);
+  max-width: 400px;
+  line-height: 1.5;
+}

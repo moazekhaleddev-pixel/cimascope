@@ -1,0 +1,22 @@
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transform: translateY(-100px);
+}
+
+.dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid var(--border);
+  background-color: #27272c00;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.dots button.selected {
+  width: 30px;
+  background-color: var(--accent);
+  border-radius: 10px;
+}

@@ -1,0 +1,35 @@
+.userActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.userActions .detailsBtn {
+  background-color: var(--accent);
+  border: none;
+  padding: 10px;
+  border-radius: var(--radius-xl);
+  transition: all 0.3s;
+  box-shadow:
+    0 10px 25px -5px rgba(201, 162, 39, 0.3),
+    0 8px 10px -6px rgba(201, 162, 39, 0.2);
+    cursor: pointer;
+}
+
+.userActions button:not(.detailsBtn) {
+  display: flex;
+  padding: 10px;
+  border-radius: 100%;
+  border: 1px solid var(--border);
+  background-color: var();
+  background-color: var(--surface-glass);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.1s;
+}
+
+.userActions button:hover {
+  transform: scale(1.1);
+}

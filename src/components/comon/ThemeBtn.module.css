@@ -1,0 +1,7 @@
+.themeBtn{
+    background-color: var(--surface-alt);
+    border: 1px solid var(--accent);
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+}

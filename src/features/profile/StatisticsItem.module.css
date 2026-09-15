@@ -1,0 +1,18 @@
+.statsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: var(--bg-alt);
+  color: var(--text-secondary);
+  border-radius: var(--radius-xl);
+}
+.statsCard span:first-child{
+    font-size: var(--font-xl);
+}
+.statsCard .num {
+  color: #c9a227;
+  font-size: var(--font-xl);
+  font-weight: bold;
+}

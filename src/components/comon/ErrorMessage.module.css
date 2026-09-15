@@ -1,0 +1,35 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  gap: 15px;
+}
+
+.errorIcon {
+  color: var(--red, #ff4d4d);
+  animation: bounce 2s infinite;
+}
+
+.errorText {
+  color: var(--text-primary, #fff);
+  font-size: var(--font-lg);
+  font-weight: 500;
+  max-width: 400px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

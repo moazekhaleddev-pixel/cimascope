@@ -1,0 +1,26 @@
+.search {
+  flex: 1;
+  position: relative;
+}
+.search input {
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  width: 100%;
+  background-color: var(--surface-glass);
+  border-radius: var(--radius-xl);
+  color: var(--text-primary);
+  min-width: 250px;
+}
+.search input:focus{
+    outline: 1px solid var(--accent);
+}
+.search .searchBar::placeholder {
+  color: var(--text-secondary);
+}
+
+.search span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

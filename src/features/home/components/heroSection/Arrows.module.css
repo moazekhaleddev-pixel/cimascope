@@ -1,0 +1,19 @@
+.arrows {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translate(-50%, -50%);
+}
+
+.arrows button {
+  padding: 10px;
+  background-color: var(--surface-glass);
+  color: white !important;
+  border: 1px solid var(--border);
+  border-radius: 100%;
+  cursor: pointer;
+}

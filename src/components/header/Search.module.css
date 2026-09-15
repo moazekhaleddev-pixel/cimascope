@@ -1,0 +1,87 @@
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search span {
+  position: absolute;
+  right: 7px;
+}
+
+.search input {
+  background-color: var(--surface-alt);
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  width: 180px;
+  padding: 5px 10px;
+  transition: all 0.3s;
+  caret-color: var(--text-secondary);
+  color: var(--text-primary);
+}
+
+.search input:focus {
+  width: 250px;
+  outline: 1px solid var(--accent);
+}
+
+.MobileSearch .searchModal {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--accent-glow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+
+  z-index: 9999;
+
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  gap: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.MobileSearch .searchIcon button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MobileSearch .searchModal div{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MobileSearch .searchModal form {
+  width: 100%;
+}
+.MobileSearch .searchModal input {
+  width: 100%;
+  background-color: var(--bg-alt);
+  padding: 15px;
+  border: 1px solid var(--border);
+
+  outline: 1px solid var(--accent);
+  border-radius: var(--radius-lg);
+  caret-color: var(--text-primary);
+  color: var(--text-primary);
+  font-size: var(--font-sm);
+}
+
+.MobileSearch .searchModal.open {
+  display: flex;
+}

@@ -1,0 +1,12 @@
+.trailerBtn{
+    background-color:var(--accent);
+    border: none;
+    padding: 5px 10px;
+    border-radius: var(--radius-xl);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.trailerBtn:hover{
+    transform: scale(1.1);
+}

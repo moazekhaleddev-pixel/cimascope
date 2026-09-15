@@ -1,0 +1,79 @@
+.videos{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.videos .head{
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.videos .videosTitles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.videos .videosTitles button{
+    background-color:  var(--surface-glass);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-sm);
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.videos .videosTitles button.active{
+    background-color: var(--accent) !important;
+    color: black;
+}
+
+.videos .vedioContainer{
+    background-image: var(--bg-img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio:4/2;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.videos .vedioContainer > *{
+    z-index: 2;
+}
+.videos .vedioContainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 1;
+    transition: all 0.1s;
+}   
+.videos .vedioContainer:hover::before{
+    background-color: transparent;
+}
+.videos .vedioContainer span.play{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent);
+    border-radius: 50%;
+}
+.videos .vedioContainer span{
+    color: var(--text-secondary);
+}
+

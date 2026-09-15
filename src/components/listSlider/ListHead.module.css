@@ -1,0 +1,62 @@
+.head  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.head  .label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.head  .label span {
+  color: var(--text-secondary);
+  background-color: var(--surface-glass);
+  padding: 1px 10px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  font-weight: bold;
+}
+
+.head  .headActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.head  .headActions button.show {
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.head  .headActions .arrows {
+  display: flex;
+  gap: 8px;
+}
+
+.head  .headActions .arrows button {
+  background-color: var(--bg-alt, #222);
+  color: var(--text-primary, #fff);
+  border: 1px solid var(--border, #333);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+
+.head  .headActions .arrows button:hover{
+  background-color: var(--accent, #c9a227);
+  color: #000;
+}
+
+
+

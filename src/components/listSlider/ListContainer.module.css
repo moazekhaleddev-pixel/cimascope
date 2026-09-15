@@ -1,0 +1,18 @@
+ .listContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-top: 10px;
+}
+
+ .listContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.listContainer > div{
+    width: 180px;
+  min-width: 180px;
+}

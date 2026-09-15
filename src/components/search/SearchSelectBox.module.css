@@ -1,0 +1,12 @@
+.select {
+  padding: 10px;
+  border: 1px solid var(--border);
+  background-color: var(--surface-glass);
+  outline-color: var(--accent);
+  border-radius: var(--radius-xl);
+  color: var(--text-primary);
+}
+.select:focus{
+    outline: 1px solid var(--accent);
+}
+
