@@ -6,8 +6,6 @@ import { useAuth } from "../../../contexts/AuthContext";
 import Loader from "../../../components/comon/Loader";
 import ErrMsg from "./ErrMsg";
 import { useNavigate } from "react-router-dom";
-import facebookLogo from "../../../../assets/facebook.webp"
-import googleLogo from "../../../../assets/google-logo.webp"
 export default function LoginForm() {
   const [email, setEmail] = useState("moaz@cimascope.com");
   const [password, setPassword] = useState("123456");
@@ -108,11 +106,11 @@ function FormBtns() {
   return (
     <div className={styles.loginBtns}>
       <Button type="button">
-        <img src={googleLogo} />
+        <img src="/assets/goolge-logo.webp" />
         Continue with google
       </Button>
       <Button type="button">
-        <img src={facebookLogo} />
+        <img src="/assets/facebook.webp" />
         Continue with facebook
       </Button>
     </div>
