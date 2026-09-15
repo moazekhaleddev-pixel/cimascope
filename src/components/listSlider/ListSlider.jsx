@@ -47,7 +47,7 @@ export default function ListSlider({ label, category, list }) {
       behavior: "smooth",
     });
   };
-
+  if (!list || list.length === 0) return;
   return (
     <section ref={ref} className={styles.slider} key={label}>
       {inView && (

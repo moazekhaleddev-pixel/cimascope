@@ -5,7 +5,7 @@ export default function ListHead({label,list,handleShowAll,handleScroll}) {
   return (
     <div className={styles.head}>
       <div className={styles.label}>
-        <h2>{label}</h2> <span>{list.length}</span>
+        <h2>{label}</h2> <span>{list?.length}</span>
       </div>
       <div className={styles.headActions}>
         <button className={styles.show} onClick={handleShowAll}>
