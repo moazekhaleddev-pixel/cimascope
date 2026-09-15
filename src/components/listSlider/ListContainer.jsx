@@ -3,7 +3,7 @@ import TvCard from "../comon/TvCard";
 export default function ListContainer({ list, listContainerRef, category }) {
   return (
     <div className={styles.listContainer} ref={listContainerRef}>
-      {list.map(
+      {list?.map(
         ({
           original_name: name,
           original_title: title,
