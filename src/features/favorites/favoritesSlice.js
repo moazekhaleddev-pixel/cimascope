@@ -85,6 +85,7 @@ const favoritesSlice = createSlice({
     },
   },
 });
+const BASE_URL = "https://cimascopejsonserver-ztwhj577.b4a.run"
 
 const {
   fetchStart,
@@ -102,7 +103,7 @@ export const getFavoritesList = () => {
   return async (dispatch) => {
     try {
       dispatch(fetchStart());
-      const data = await apiFetch("http://localhost:3001/favorites");
+      const data = await apiFetch(`${BASE_URL}/favorites`);
       dispatch(fetchFavoritesListSucces(data, "Favorites is ready"));
     } catch (error) {
       console.error(error.message);
@@ -115,7 +116,7 @@ export const addItemToFavoritesList = (newItem) => {
   return async (dispatch) => {
     try {
       dispatch(fetchStart());
-      const data = await apiFetch("http://localhost:3001/favorites", {
+      const data = await apiFetch(`${BASE_URL}/favorites`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -134,7 +135,7 @@ export const remveItemFromFavoritesList = (id) => {
   return async (dispatch) => {
     try {
       dispatch(fetchStart());
-      await apiFetch(`http://localhost:3001/favorites/${id}`, {
+      await apiFetch(`${BASE_URL}/favorites/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
