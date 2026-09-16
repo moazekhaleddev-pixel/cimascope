@@ -95,7 +95,7 @@ const {
   removeWatchNotification,
   fetchRejected,
 } = watchSlice.actions;
-const BASE_URL = "https://cimascopejsonserver1-lc5fy9c1.b4a.run"
+const BASE_URL = "https://cimascopejsonserver1-eyz0tz1w.b4a.run"
 export { clearWatchNotifications, removeWatchNotification };
 
 export const getWatchList = () => {
