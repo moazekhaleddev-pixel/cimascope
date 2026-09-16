@@ -35,9 +35,9 @@ export default function App() {
           <Route
             path="/cimascope"
             element={
-              <ProtectedRoute>
+              // <ProtectedRoute>
                 <AppLayout />
-              </ProtectedRoute>
+              // </ProtectedRoute>
             }
           >
             <Route index element={<Navigate to="./home" replace />} />
