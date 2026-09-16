@@ -3,8 +3,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Loader from "./components/comon/Loader";
 import ProtectedRoute from "./components/comon/ProtectedRoute";
 import ProtectedGuest from "./components/comon/ProtectedGuest";
-const Home = lazy(()=>import("./pages/Home"))
-const Trending = lazy(()=>import("./pages/Trending"))
+const Home = lazy(() => import("./pages/Home"));
+const Trending = lazy(() => import("./pages/Trending"));
 const Login = lazy(() => import("./pages/Login"));
 const AppLayout = lazy(() => import("./pages/AppLayout"));
 const Search = lazy(() => import("./pages/Search"));
@@ -35,16 +35,16 @@ export default function App() {
           <Route
             path="/cimascope"
             element={
-              // <ProtectedRoute>
+              <ProtectedRoute>
                 <AppLayout />
-              // </ProtectedRoute>
+              </ProtectedRoute>
             }
           >
             <Route index element={<Navigate to="./home" replace />} />
             <Route path="home" element={<Home />} />
             <Route path="search" element={<Search />} />
             <Route path="movies" element={<Movies />}>
-               <Route path=":movieId" element={<MovieDetails />}>
+              <Route path=":movieId" element={<MovieDetails />}>
                 <Route path=":videoKey" element={<VideoPopup />} />
               </Route>
             </Route>
