@@ -85,7 +85,7 @@ const favoritesSlice = createSlice({
     },
   },
 });
-const BASE_URL = "https://cimascopejsonserver-gqv9jq9b.b4a.run"
+const BASE_URL = "https://cimascopejsonserver1-lc5fy9c1.b4a.run"
 
 const {
   fetchStart,
