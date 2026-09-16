@@ -95,7 +95,7 @@ export default function MetaCatalog({ type }) {
             />
           </FiltersContainer>
           {list.length !== 0 ? (
-            <SearchList list={list} hasHead={false} />
+            <SearchList list={list} hasHead={false} type={type} />
           ) : (
             <ResaultNotFound
               emoji="🎬"
