@@ -85,7 +85,7 @@ const favoritesSlice = createSlice({
     },
   },
 });
-const BASE_URL = "https://cimascope-data-server.vercel.app"
+const BASE_URL = "https://cimascopejsonserver-gqv9jq9b.b4a.run"
 
 const {
   fetchStart,

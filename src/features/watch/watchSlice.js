@@ -95,7 +95,7 @@ const {
   removeWatchNotification,
   fetchRejected,
 } = watchSlice.actions;
-const BASE_URL = "https://cimascope-data-server.vercel.app"
+const BASE_URL = "https://cimascopejsonserver-gqv9jq9b.b4a.run"
 export { clearWatchNotifications, removeWatchNotification };
 
 export const getWatchList = () => {
