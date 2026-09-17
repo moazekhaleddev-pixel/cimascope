@@ -58,7 +58,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className={styles.bottomSection}>
-          <p>© 2024 CimaScope • Built with React, React ecosystym , React lybiraries, and the TMDB API • Portfolio project</p>
+          <p>© 2026 CimaScope • Built with React, React ecosystym , React lybiraries, and the TMDB API • Portfolio project</p>
           <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
         </div>
       </div>
