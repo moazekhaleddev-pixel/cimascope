@@ -1,6 +1,6 @@
 import { Link, NavLink, } from "react-router-dom";
 import styles from "./MobileDrawer.module.css";
-import { Bookmark, Heart, Menu, User, X } from "lucide-react";
+import { Astroid, Bookmark, Heart, Menu, User, X } from "lucide-react";
 import { useState } from "react";
 
 export default function MobileDrawer() {
@@ -28,6 +28,9 @@ export default function MobileDrawer() {
           </Link>
           <Link to="/cimascope/profile">
             <User size={20} /> Profile
+          </Link>
+          <Link to="/cimascope/ai">
+            <Astroid size={20} color="var(--accent)" /> Ai Assistant
           </Link>
         </nav>
       </div>

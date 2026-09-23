@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { startAiChat, sendMessageToAi } from '../servicies/gimini';
 import AiHeader from '../features/ai/AiHeader';
 import ChatMessage from '../features/ai/ChatMessage';
@@ -13,15 +13,12 @@ export default function AiAssistant() {
     }
   ]);
   const [isLoading, setIsLoading] = useState(false);
-  // const messagesEndRef = useRef(null);
 
   useEffect(() => {
     startAiChat();
   }, []);
 
-  // useEffect(() => {
-  //   messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  // }, [messages]);
+  
 
 const handleSendMessage = async (text) => {
     const updatedMessages = [...messages, { role: 'user', content: text }];
