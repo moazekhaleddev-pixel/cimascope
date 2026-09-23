@@ -1,0 +1,75 @@
+.inputSection {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.suggestions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.suggestionChip {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: var(--radius-xl);
+  font-size: var(--text-xs, 0.75rem);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.suggestionChip:hover:not(:disabled) {
+  background: var(--surface-alt);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  background-color: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-xl);
+  padding: 8px 16px;
+}
+
+.input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: var(--text-sm, 0.875rem);
+  padding: 10px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+.sendBtn {
+  background-color: var(--accent);
+  color: var(--bg);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sendBtn:hover:not(:disabled) {
+  background-color: var(--accent-hover);
+}
+
+.sendBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

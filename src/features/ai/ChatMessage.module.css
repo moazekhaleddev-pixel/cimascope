@@ -1,0 +1,65 @@
+.messageRow {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+
+.userRow {
+  justify-content: flex-end;
+}
+
+.aiRow {
+  justify-content: flex-start;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 16px 20px;
+  border-radius: var(--radius-lg);
+  font-size: var(--text-sm, 0.875rem);
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
+.userBubble {
+  background-color: var(--accent);
+  color: var(--bg);
+  border-bottom-right-radius: var(--radius-sm);
+}
+
+.aiBubble {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border-top-left-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.aiAvatar {
+  width: 32px;
+  height: 32px;
+  background-color: var(--accent-dim);
+  color: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+  border: 1px solid var(--accent);
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  background-color: var(--elevated);
+  color: var(--text-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: bold;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}

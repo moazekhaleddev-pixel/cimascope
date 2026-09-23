@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import styles from "./UserActions.module.css";
 import ThemeBtn from "../comon/ThemeBtn";
-import { Bookmark, Heart } from "lucide-react";
+import { Astroid, Bookmark, Heart } from "lucide-react";
 export default function UserActions() {
   const { user } = useAuth();
   const { avatar } = user;
@@ -14,6 +14,9 @@ export default function UserActions() {
         </Link>
         <Link to="/cimascope/watched">
           <Bookmark />
+        </Link>
+        <Link to="/cimascope/ai">
+          <Astroid color="var(--accent)" />
         </Link>
       </nav>
       <ThemeBtn />

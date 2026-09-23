@@ -17,7 +17,7 @@ const Watch = lazy(() => import("./pages/Watch"));
 const UserProfile = lazy(() => import("./pages/UserProfile"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 const VideoPopup = lazy(() => import("./components/details/VideoPopup"));
-
+const AiAssistant = lazy(()=>import("./pages/AiAssistant"))
 export default function App() {
   return (
     <div>
@@ -57,6 +57,7 @@ export default function App() {
             <Route path="favorites" element={<Favorites />} />
             <Route path="watched" element={<Watch />} />
             <Route path="profile" element={<UserProfile />} />
+          <Route path="ai" element={<AiAssistant/>} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

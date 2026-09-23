@@ -16,7 +16,7 @@
   --accent: #c9a227;
   --accent-hover: #dbb43a;
   --accent-dim: rgba(201, 162, 39, 0.15);
-  --accent-glow: rgba(201, 162, 39, 0.3);
+  --accent-glow: #3B2D0C;
   --red: #e05a5a;
   --green: #4caf76;
   --radius-sm: 6px;
@@ -41,7 +41,7 @@
   --accent: #a67c00;
   --accent-hover: #8f6a00;
   --accent-dim: rgba(166, 124, 0, 0.12);
-  --accent-glow: rgba(166, 124, 0, 0.2);
+  --accent-glow: #F7E8C0;
   --red: #c43c3c;
   --green: #277047;
 }
